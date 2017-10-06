@@ -1,0 +1,37 @@
+[user]
+	name = Nick McRae
+[user]
+	email = nick@mcraetek.com
+[core]
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	l = log --pretty=format:\"%C(yellow)%h\\\\ %ad%Cred%d\\\\ %Creset%s%Cgreen\\\\ [%cn]\" --decorate --date=short
+	ac = !git add . && git commit -am
+	diffs = diff --name-status
+	addalias = config --global
+	aliaslist = config --get-regexp ^alias\\.
+	brhash = branch -f
+	publish = push -u origin
+	rmalias = config --global --unset
+	cam = commit -am
+	bra = branch -a
+	abortmerge = merge --abort
+[diff]
+	tool = bc
+[difftool "bc3"]
+	path = c:\\Program Files\\Beyond Compare 4\\BComp.exe
+[difftool "bc"]
+	path = c:\\Program Files\\Beyond Compare 4\\BComp.exe
+[merge]
+	tool = bc
+[mergetool "bc"]
+	path = c:/Program Files/Beyond Compare 4/bcomp.exe 
+[mergetool]
+	keepBackup = false
+[remote "origin"]
+	prune = true 
